@@ -37,6 +37,12 @@ public class TicTacToe {
 			
 			placePiece(gameBoard, playerPos, "player"); // This method will place piece for player replacing integer input into 'X' char symbol.
 			
+			String result = checkWinner();
+			if(result.length() > 0) {
+				System.out.println(result);	
+				break;
+			}
+			
 			Random rand = new Random();
 			int cpuPos = rand.nextInt(9) + 1;
 			while(playerPositions.contains(cpuPos) || cpuPositions.contains(cpuPos)) {
@@ -47,8 +53,12 @@ public class TicTacToe {
 			
 			printGameBoard(gameBoard); // This method will initialize the application by printing a 2D TicTacToe game board.
 			
-			String result = checkWinner();
-			System.out.println(result);
+			result = checkWinner();
+			if(result.length() > 0) {
+				System.out.println(result);	
+				break;
+			}
+			
 		}
 		
 		
