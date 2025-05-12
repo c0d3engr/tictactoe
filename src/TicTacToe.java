@@ -57,7 +57,7 @@ public class TicTacToe {
 	
 
 	//=============================================================================//
-	//=========All methods to run the TicTacToe application has listed below.======//
+	//=========All methods to run the TicTacToe application listed below.======//
 	//=============================================================================//
 
 	
